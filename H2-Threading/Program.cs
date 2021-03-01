@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace H2_Threading
 {
@@ -45,6 +46,21 @@ namespace H2_Threading
             //Thread thread2 = new Thread(new ThreadStart(ex4.PrinterThread));
             //thread1.Start();
             //thread2.Start();
+
+            //ThreadPool Exercise
+            //ExerciseThreadPool etp = new ExerciseThreadPool();
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    ThreadPool.QueueUserWorkItem(new WaitCallback(etp.task1));
+            //    ThreadPool.QueueUserWorkItem(new WaitCallback(etp.task2));
+            //}
+            //Console.Read();
+
+            //PoolVsObjects
+            //ExerciseThreadPool etp = new ExerciseThreadPool();
+            //etp.ThreadPoolVsObjects();
+
+
         }
     }
 }
